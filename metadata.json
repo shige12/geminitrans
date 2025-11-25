@@ -1,0 +1,5 @@
+{
+  "name": "GeminiDub - AI Video Translator",
+  "description": "Batch translate English videos to Chinese audio while preserving the original vibe using Gemini 2.5 Multimodal and TTS capabilities.",
+  "requestFramePermissions": []
+}

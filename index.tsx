@@ -1,0 +1,17 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+
+// Fix: Access document via window cast to avoid 'Cannot find name document' if lib 'dom' is missing
+const doc = (window as any).document;
+const rootElement = doc.getElementById('root');
+if (!rootElement) {
+  throw new Error("Could not find root element to mount to");
+}
+
+const root = ReactDOM.createRoot(rootElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
